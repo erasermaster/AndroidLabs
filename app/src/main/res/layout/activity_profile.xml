@@ -32,7 +32,7 @@
         android:id="@+id/emailBoxP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/emailMsg"
+        android:hint="@string/hintProfile"
         android:inputType="textEmailAddress" />
 
     <TextView
@@ -51,4 +51,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/clickBtn" />
+
+    <Button
+        android:id="@+id/gotoChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gotoChat" />
 </LinearLayout>

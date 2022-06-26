@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs</string>
-    <string name ="EnterEmail">输入你的邮箱: </string>
-    <string name ="EnterPassword">输入你的密码:   </string>
-    <string name ="ButtonText">登录</string>
-    <string name ="EditText">在这里输入</string>
-
-    <string name="Profile">您的资料</string>
-    <string name="Name">您的姓名:</string>
-    <string name="Email">您的电子邮箱:</string>
-    <string name="Pic">您的照片:</string>
-    <string name="abovePic">点击按钮开启照相功能</string>
-
-    <string name="enterName">输入姓名</string>
-
-    <string name="hello_message">输入你的邮箱</string>
-    <string name="hint">输入你的邮箱</string>
-    <string name="password">输入你的密码</string>
-    <string name="profileName">你的你的信息\n你的名字</string>
-    <string name="hintProfile">输入你的名字</string>
-    <string name="emailMsg">你的邮箱</string>
+    <string name="app_name">安卓实验课</string>
+    <string name="hello_message">输入邮件地址</string>
+    <string name="ButtonText">登录</string>
+    <string name="hint">在此处输入邮件地址</string>
+    <string name="password">输入密码:</string>
+    <string name="profileName">你的文件/名字：</string>
+    <string name="hintProfile">输入邮件地址</string>
+    <string name="emailMsg">你的邮件地址</string>
     <string name="yourPicture">你的照片</string>
-    <string name="clickBtn">点这个按钮拍照片</string>
+    <string name="clickBtn">点击拍照</string>
+    <string name="sendButton">发送</string>
+    <string name="typehere">在此处输入</string>
+    <string name="receiveButton">接收</string>
+    <string name="deleteThis">删除此行？</string>
+    <string name="selectedRow">选择行为：</string>
+    <string name="dbID">数据库ID：</string>
+    <string name="noBtn">取消</string>
+    <string name="yesBtn">确认</string>
+    <string name="gotoChat">去向聊天界面</string>
 </resources>

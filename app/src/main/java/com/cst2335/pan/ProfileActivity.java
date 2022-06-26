@@ -1,13 +1,8 @@
 package com.cst2335.pan;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -15,6 +10,7 @@ import android.os.PersistableBundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -23,7 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private ImageView mImageButton;
-    public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";      // should it be here?
+    public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +34,15 @@ public class ProfileActivity extends AppCompatActivity {
         String email = fromMain.getStringExtra("EMAIL");
         emailBoxP.setText(email);
 
-        Log.e(ACTIVITY_NAME, "In function: onCreate()");         // like this?
+        Log.e(ACTIVITY_NAME, "In function: onCreate()");
+
+        Button chatButton = findViewById(R.id.gotoChat);
+        Intent gotoChat = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+        chatButton.setOnClickListener(click -> {
+            startActivity(gotoChat);
+        });
+
+
     }
 
     @Override
@@ -74,24 +78,24 @@ public class ProfileActivity extends AppCompatActivity {
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-            myPictureTakerLauncher.launch(takePictureIntent);
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
     }
 
 
-    ActivityResultLauncher<Intent> myPictureTakerLauncher =
-            registerForActivityResult(new ActivityResultContracts.StartActivityForResult()
-                    , new ActivityResultCallback<ActivityResult>() {
-                        @Override
-                        public void onActivityResult(ActivityResult result) {
-                            if (result.getResultCode() == Activity.RESULT_OK) {
-                                Intent data = result.getData();
-                                Bitmap imgbitmap = (Bitmap) data.getExtras().get("data");
-                                mImageButton.setImageBitmap(imgbitmap); // the imageButton
-                            } else if (result.getResultCode() == Activity.RESULT_CANCELED) ;
-                            // Log.i(TAG, "User refused to capture a picture.");
-                        }
-                    });
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            mImageButton.setImageBitmap(imageBitmap);
+        }
+        Log.e(ACTIVITY_NAME, "In function: onActivityResult()");
+    }
+
+
 }
+
 
 

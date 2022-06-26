@@ -1,24 +1,21 @@
 <resources>
-    <string name="app_name">Lab 3</string>
-    <string name="EnterEmail">Enter your email address: </string>
-    <string name="EnterPassword">Type your password:  </string>
-    <string name="ButtonText">Login</string>
-    <string name="EditText">Type email here</string>
-
-    <string name="Profile">Your Profile</string>
-    <string name="Name">Your Name:</string>
-    <string name="Email">Your email:</string>
-    <string name="Pic">Your picture:</string>
-    <string name="abovePic">Click the button above to take a picture</string>
-
-    <string name="enterName">Enter your name</string>
-    <string name="hello_message">Enter your email</string>
+    <string name="app_name">Android Labs</string>
+    <string name="hello_message">Enter your email address!</string>
+    <string name="ButtonText">LOGIN</string>
     <string name="hint">Type email here</string>
     <string name="password">Type your password:</string>
     <string name="profileName">Your profile\nYour name:</string>
-    <string name="hintProfile">Enter your name:</string>
+    <string name="hintProfile">Enter your email</string>
     <string name="emailMsg">Your email:</string>
-    <string name="yourPicture">Your pictures:</string>
-    <string name="clickBtn">Click button above to take a picture</string>
-
+    <string name="yourPicture">Your picture:</string>
+    <string name="clickBtn">Click the button above to take a picture</string>
+    <string name="sendButton">send</string>
+    <string name="typehere">type here</string>
+    <string name="receiveButton">receive</string>
+    <string name="deleteThis">delete this?</string>
+    <string name="selectedRow">The selected row is: </string>
+    <string name="dbID">The database id is:  </string>
+    <string name="noBtn">No</string>
+    <string name="yesBtn">Yes</string>
+    <string name="gotoChat">go to chat</string>
 </resources>
