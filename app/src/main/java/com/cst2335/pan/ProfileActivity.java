@@ -19,7 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private static final int REQUEST_IMAGE_CAPTURE = 1;
     private ImageView mImageButton;
-    public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";
+    public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";      // should it be here?
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +96,3 @@ public class ProfileActivity extends AppCompatActivity {
 
 
 }
-
-
-
