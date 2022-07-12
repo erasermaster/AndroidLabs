@@ -160,7 +160,7 @@ public class ChatRoomActivity extends AppCompatActivity {
         Log.i("Column Number - ", "Number of columns is : " + columnCount);
         Log.i("Row Number - ", "Number of rows is : n" + rowCount);
         Log.i("Column Index - ", "Chat column index is : " + chatsColumnIndex);
-
+//
 
         c.moveToFirst();
         while (!c.isAfterLast()) {
