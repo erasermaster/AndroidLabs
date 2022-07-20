@@ -149,14 +149,14 @@ public class ChatRoomActivity extends AppCompatActivity {
         int rowCount = c.getCount();           //  column count
         int columnCount = c.getColumnCount();
         int chatsColumnIndex = c.getColumnIndex(MyOpener.COL_CHATS);      //    index of chats column
-        int typeColumnIndex = c.getColumnIndex(MyOpener.COL_Type);      //    index of type column
         String chatColumnName = c.getColumnName(chatsColumnIndex);        //    name of chatColumn
 
 
         Log.i("Version Number -  ", "Database Version No is : " + version1);
         Log.i("Column Number - ", "Number of columns is : " + columnCount);
+        Log.i("Column Name -  ", "Column name is : " + chatColumnName);
         Log.i("Row Number - ", "Number of rows is : n" + rowCount);
-        Log.i("Column Index - ", "Chat column index is : " + chatsColumnIndex);
+
 
 
         c.moveToFirst();
