@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp"
 
     <TextView
         android:layout_width="match_parent"
@@ -21,7 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint"
-        android:inputType="textEmailAddress" />
+
+        android:inputType="textEmailAddress"
+        android:nextFocusLeft="@id/emailBox"
+        android:nextFocusRight="@id/emailBox"
+        android:nextFocusUp="@id/emailBox"
+        android:nextFocusDown="@id/typeinPswd" />
 
     <TextView
         android:layout_width="match_parent"
@@ -29,15 +38,24 @@
         android:text="@string/password" />
 
     <EditText
+        android:id="@+id/typeinPswd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:nextFocusLeft="@id/typeinPswd"
+        android:nextFocusRight="@id/typeinPswd"
+        android:nextFocusUp="@id/typeinPswd"
+        android:nextFocusDown="@id/button" />
 
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:nextFocusLeft="@id/button"
+        android:nextFocusRight="@id/button"
+        android:nextFocusUp="@id/button"
+        android:nextFocusDown="@id/emailBox"
         android:text="@string/ButtonText" />
 
 </LinearLayout>
