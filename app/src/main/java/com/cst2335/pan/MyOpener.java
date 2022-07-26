@@ -9,8 +9,8 @@ public class MyOpener extends SQLiteOpenHelper {
     protected final static String DATABASE_NAME = "ChatDB";
     protected final static int VERSION_NUM = 3;
     public final static String TABLE_NAME = "CHATSTABLE";
-    //public final static String COL_EMAIL = "EMAIL";
-    //public final static String COL_NAME = "NAME";
+    public final static String COL_EMAIL = "EMAIL";
+    public final static String COL_NAME = "NAME";
     public final static String COL_ID = "_id";
     public final static String COL_CHATS = "EMAIL";
     public final static String COL_Type = "Type";
@@ -25,11 +25,13 @@ public class MyOpener extends SQLiteOpenHelper {
     //Look on your device in the /data/data/package-name/database directory.
     @Override
     public void onCreate(SQLiteDatabase db) {
+//        db.execSQL("CREATE TABLE " + TABLE_NAME + " (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+//                + COL_CHATS + " text);");  // add or remove columns
 
 
         db.execSQL("CREATE TABLE " + TABLE_NAME + " (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + COL_CHATS + " text,"
-                + COL_Type + " INTEGER);");  // add or remove columns, change email to chats
+                + COL_EMAIL + " text,"
+                + COL_Type + " INTEGER);");  // add or remove columns
     }
 
 

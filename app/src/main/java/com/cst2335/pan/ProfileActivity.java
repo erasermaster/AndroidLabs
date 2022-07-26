@@ -42,11 +42,12 @@ public class ProfileActivity extends AppCompatActivity {
             startActivity(gotoChat);
         });
 
-        Button weatherButton = findViewById(R.id.gotoWeather);
+        Button weatherBtn = findViewById(R.id.gotoWeather);
         Intent gotoWeather = new Intent(ProfileActivity.this, WeatherForecast.class);
-        chatButton.setOnClickListener(click -> {
+        weatherBtn.setOnClickListener(click -> {
             startActivity(gotoWeather);
         });
+
 
     }
 

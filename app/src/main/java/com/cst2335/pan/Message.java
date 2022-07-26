@@ -1,11 +1,14 @@
 package com.cst2335.pan;
 
 
+import android.graphics.Bitmap;
+
 public class Message {
     private int type;
     private String content;
     private long id;
 
+    //  cons
     public Message() {
     }
 

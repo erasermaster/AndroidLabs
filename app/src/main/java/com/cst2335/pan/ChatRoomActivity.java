@@ -39,11 +39,9 @@ public class ChatRoomActivity extends AppCompatActivity {
 
         Message msg = new Message();
 
-        //create an adapter object and sent it to the listView
         MyListAdapter myListAdapter = new MyListAdapter(this, list);
         listView.setAdapter(myListAdapter);
 
-        //get any previously saved message objects
         loadDataFromDatabase();
 
         //  alert to be added
@@ -148,19 +146,21 @@ public class ChatRoomActivity extends AppCompatActivity {
 
     public void printCursor(Cursor c, int version) {
         int version1 = db.getVersion();     //  version number
-        int columnCount = c.getColumnCount();   //  column count
-
-        int rowCount = c.getCount();           //  row count
+        int rowCount = c.getCount();           //  column count
+        int columnCount = c.getColumnCount();
         int chatsColumnIndex = c.getColumnIndex(MyOpener.COL_CHATS);      //    index of chats column
         int typeColumnIndex = c.getColumnIndex(MyOpener.COL_Type);      //    index of type column
         String chatColumnName = c.getColumnName(chatsColumnIndex);        //    name of chatColumn
+
+
+//        Log.d("name of column is", "printCursor: " + chatColumnName);
 
 
         Log.i("Version Number -  ", "Database Version No is : " + version1);
         Log.i("Column Number - ", "Number of columns is : " + columnCount);
         Log.i("Row Number - ", "Number of rows is : n" + rowCount);
         Log.i("Column Index - ", "Chat column index is : " + chatsColumnIndex);
-//
+
 
         c.moveToFirst();
         while (!c.isAfterLast()) {

@@ -22,6 +22,7 @@
     <string name="minTempText">min temperature</string>
     <string name="maxTempText">max temperature</string>
     <string name="UVRatingText">UV rating</string>
+    <string name="gotoWeather">Go to weather</string>
 
 
 </resources>
