@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="172dp"
+    android:layout_height="172dp"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:text="@string/profileName"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hintProfile"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/emailMsg"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/emailBoxP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hintProfile"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/yourPicture"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/picture_frame" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/clickBtn" />
+
+    <Button
+        android:id="@+id/gotoChat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/gotoChat"
+        android:textSize="5dp" />
+
+    <Button
+        android:id="@+id/gotoWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/gotoWeather" />
+</LinearLayout>
