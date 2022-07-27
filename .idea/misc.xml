@@ -5,11 +5,20 @@
       <map>
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_chat_room.xml" value="0.11929824561403508" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-notround/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-notround/activity_weather_forecast.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-round/activity_main.xml" value="0.6139705882352942" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-round/activity_profile.xml" value="0.547945205479452" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-round/activity_weather_forecast.xml" value="0.547945205479452" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-sw720dp/activity_chat_room.xml" value="0.1" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout-sw720dp/senderlayout.xml" value="0.1" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_chat_room.xml" value="0.136" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_empty.xml" value="0.1" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_main_linear.xml" value="0.14266304347826086" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_profile.xml" value="0.264" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/activity_weather_forecast.xml" value="0.1" />
+        <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/fragment_details.xml" value="0.1" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/layout_notroud_layout.xml" value="0.1" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/layout_roud_layout.xml" value="0.1" />
         <entry key="..\:/Users/azura/AndroidStudioProjects/AndroidLabs/app/src/main/res/layout/receiverlayout.xml" value="0.1691542288557214" />

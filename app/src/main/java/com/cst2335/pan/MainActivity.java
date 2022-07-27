@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
     SharedPreferences pref = null;
     EditText emailBox;
     //
